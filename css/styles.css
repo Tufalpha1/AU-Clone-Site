@@ -2,11 +2,23 @@ body{
     font-family:Sans-serif;
 }
 h1{
-    font-weight: 500;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
 }
 /* Navbar section */
-.bg-navbar-custom {
+.bg-navbar-color{
     background-color: #16213E;
+}
+.bg-navbar-custom {
+background: #16213e; /* Old browsers */
+background: -moz-linear-gradient(top,  #16213e 56%, #87bcea 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #16213e 56%,#87bcea 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #16213e 56%,#87bcea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16213e', endColorstr='#87bcea',GradientType=0 ); /* IE6-9 */
+
 }
 .nav{
     --bs-nav-link-color:white;
@@ -19,6 +31,42 @@ h1{
 .btn-custom:hover{
     background-color: red;
     color: white;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.line-break{
+    display: block;
+    margin-bottom: -.2em;
+}
+/* scrolling link */
+.scroll-link{
+    color:white;
+}
+.scroll-link:visited{
+    color:white;
 }
 /* ticker */
 .hwrap {
@@ -46,7 +94,7 @@ h1{
     100% { transform: translate3d(-400%, 0, 0); }
 }
 .hmove{ 
-    animation: tickerh linear 45s infinite;
+    animation: tickerh linear 65s infinite;
     background-color:#243A73;
 }
 .hmove:hover{ 
@@ -192,14 +240,28 @@ h1{
     text-align: left;
 }
 /* cards */
-.card{
-    width: 20rem;
+.card-custom{
+    width: 15rem;
+    background-color:rgba(207, 199, 199, 0.627);
+}
+.card-title{
+    font-weight: 500;
 }
 .card-body{
     text-align: center;
 }
+.card-text{
+    text-align: left;
+}
 .card-text-custom{
-    text-align: justify;
+    font-weight: 300;
+}
+.card-text-custom-2{
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+}
+.transparent-bg-text{
+    color:white;
 }
 .btn-bg{
     background-color: #16213E;
