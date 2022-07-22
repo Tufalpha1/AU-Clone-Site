@@ -8,6 +8,7 @@ a{
     text-decoration: none;
     font-weight: bold;
 }
+
 /* Navbar section */
 .bg-navbar-color{
     background-color: #16213E;
@@ -322,4 +323,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16213e', end
     text-align: center;
     padding: 50px 0 20px;
 }
-
+/* for the last horizontal rule */
+.custom-hr{
+    margin: 0rem;
+}
